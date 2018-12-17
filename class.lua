@@ -74,6 +74,7 @@ end
 --Example--
 
 --[[
+require("class")
 
 local superClass = class({
 	printVal = function(self)
