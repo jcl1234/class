@@ -1,3 +1,6 @@
+-- version  -  1.0
+-- date     -  12/17/18
+
 --Function that creates instance(ie: class:new())
 local instanceFunc = "new"
 --Function that runs upon instance creation
