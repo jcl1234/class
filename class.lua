@@ -1,4 +1,4 @@
--- version  -  1.0
+-- version  -  1.1
 -- date     -  12/17/18
 
 --Function that creates instance(ie: class:new())
@@ -58,10 +58,6 @@ function class(...)
 		object.super = function(num)
 			local num = num or 1
 			return cls._inherit_[num]
-		end
-		--Super Init function
-		object.superInit = function(...)
-			cls._inherit_[1][initFunc](object, ...)
 		end
 		--Run Init Function On Creation
 		if object[initFunc] or rawget(cls, initFunc) then
