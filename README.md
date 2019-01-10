@@ -4,12 +4,13 @@ Custom class library for lua, similar usage to python classes.
 ```lua
 require("class")
 local superClass = class {
+  classAttr = 5,
   init = function(self, val)
     self.val = val  
   end,
 
   printVal = function(self)
-    print(self.val)
+    print(self.val + self.classAttr)
   end
   }
 
